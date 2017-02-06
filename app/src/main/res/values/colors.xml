@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">@color/md_red_A400</color>
+    <color name="colorPrimary">@color/md_black_1000</color>
+    <color name="colorPrimaryDark">@color/md_black_1000</color>
+    <color name="colorPrimaryLight">@color/md_grey_500</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

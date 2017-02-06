@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.bbuzzart.demo.ui.CuratorPicksActivity">
+
+    <View
+        android:id="@+id/app_bar_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_top_padding"
+        android:background="@color/md_purple_700" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_padding">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/transparent"
+                app:elevation="0dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:src="@drawable/img_navigator_logo"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@+id/logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/appName"
+                            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:gravity="top"
+                            android:text="@string/app_title"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp"
+                            android:gravity="bottom"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="1dp"
+                            android:text="@string/text_title_curator_s_picks_list"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="12sp"
+                            tools:ignore="SmallSp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.bbuzzart.demo.ui.CuratorPicksActivityFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:layout="@layout/fragment_default" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

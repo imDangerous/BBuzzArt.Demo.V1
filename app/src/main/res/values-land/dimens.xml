@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="card_view_toolbar_spacer">80dp</dimen>
+    <dimen name="card_view_toolbar_spacer_half">40dp</dimen>
+
+    <dimen name="card_view_curator_detail_top_margin">230dp</dimen>
+    <dimen name="card_view_curator_detail_spacer">40dp</dimen>
+</resources>

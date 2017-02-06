@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BBuzzArt.Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">BBuzzArt</string>
+
+    <string name="activity_label_default">CuratorPick Default</string>
+    <string name="activity_label_detail">CuratorPick Detail</string>
+
+    <string name="text_title_curator_s_picks_list">Curator\'s Picks List</string>
+    <string name="app_finish">Press the \'Back Button\' twice to exit</string>
+    <string name="msg_wait_moment">Please, wait moment</string>
+    <string name="text_holder_top">Top</string>
+    <string name="text_holder_curator">Curator</string>
+    <string name="text_holder_artist">Artist</string>
+    <string name="text_holder_created">Created:</string>
+    <string name="text_holder_works_vertical_list">Works Vertical List</string>
+    <string name="text_holder_works_horizontal_list">Works Horizontal List</string>
+    <string name="text_holder_curators">Curators</string>
+</resources>

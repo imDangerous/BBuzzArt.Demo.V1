@@ -1,0 +1,4 @@
+<resources>
+    <!-- <dimen name="app_bar_top_padding">26dp</dimen> -->
+    <dimen name="app_bar_top_padding">0dp</dimen>
+</resources>

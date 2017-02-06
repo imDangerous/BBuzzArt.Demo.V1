@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    tools:background="@color/md_white_1000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:gravity="center"
+            android:textColor="@color/md_grey_700"
+            android:textSize="11sp"
+            tools:ignore="SmallSp"
+            tools:text="1.0.0" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Copyright 2017. bbuzzart.com\nall rights reserved."
+            android:textColor="@color/md_grey_700"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
